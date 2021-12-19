@@ -104,7 +104,20 @@ ul {
 .nav-link-active {
   color: var(--hover-color);
 }
-
+.active {
+  position: absolute;
+  width: 78px;
+  height: 4px;
+  background-color: var(--hover-color);
+  margin-top: 28px;
+}
+.second {
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  background-color: var(--hover-color);
+  margin-top: 28px;
+}
 .contacts {
   display: flex;
   margin-left: auto;
@@ -181,6 +194,7 @@ ul {
   font-family: roboto;
   background-color: var(--hover-color);
   color: var(--wait);
+  border: 0;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -191,7 +205,52 @@ ul {
 :focus {
   color: var(--second-color);
 }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+  min-height: 581px;
+  min-width: 528px;
+  padding: 15px;
+  background-color: var(--wait);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.modal-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+  margin-left: 490px;
+  margin-bottom: 543px;
+  border-color: var(--icon-color);
+  background-color: var(--wait);
+}
+.close-img {
+  width: 11px;
+  height: 11px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--wait);
+}
 /* SKILLS SECTION*/
 
 .none {
@@ -277,7 +336,32 @@ img {
   max-width: 100%;
   height: auto;
 }
+.what-we-do-img {
+  position: relative;
+}
 
+.what-we-do-poster {
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.what-we-do-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--wait);
+
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
 /* WE SECTION */
 
 .we {
@@ -566,6 +650,8 @@ address {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   min-width: 73px;
   padding: 6px 22px;
@@ -624,6 +710,7 @@ address {
 }
 .examples-overlay {
   position: relative;
+  overflow: hidden;
 }
 .overlay-product {
   position: absolute;
@@ -633,7 +720,7 @@ address {
   height: 100%;
   background-color: var(--hover-color);
 
-  transform: translateX(-100%);
+  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .actions-text {
