@@ -24,10 +24,8 @@ body {
 h1,
 h2,
 h2,
-p,
-ul {
-  margin: 0;
-  padding: 0;
+p {
+  margin: 0px;
 }
 
 .container {
@@ -52,7 +50,10 @@ ul {
   display: flex;
   align-items: center;
 }
-
+.nav-box {
+  display: flex;
+  align-items: center;
+}
 .logo {
   text-decoration: none;
   font-family: "Raleway";
@@ -71,6 +72,7 @@ ul {
 .logo:focus {
   color: var(--hover-color);
   background-color: var(--wait);
+  transition-duration: 250ms;
 }
 
 .nav {
@@ -104,6 +106,7 @@ ul {
 .nav-link:focus {
   color: var(--hover-color);
   background: var(--whait);
+  transition-duration: 250ms;
 }
 
 .nav-link-active {
@@ -122,6 +125,7 @@ ul {
 .contacts-contact:focus {
   fill: var(--hover-color);
   color: var(--hover-color);
+  transition-duration: 250ms;
 }
 .contacts-contact {
   padding: 32px 0;
@@ -146,8 +150,9 @@ ul {
   content: " ";
   display: block;
   width: 100%;
-  height: 5px;
+  height: 4px;
   background-color: var(--hover-color);
+  border-radius: 2px;
 
   position: absolute;
   left: 0;
@@ -199,11 +204,6 @@ ul {
   border-radius: 4px;
   cursor: pointer;
 }
-
-.baner-button:hover,
-:focus {
-  color: var(--second-color);
-}
 .backdrop {
   position: fixed;
   top: 0;
@@ -211,6 +211,7 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0, 0.5);
+  transition-duration: 250ms;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -340,9 +341,12 @@ img {
 }
 
 .what-we-do-poster {
+  display: flex;
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
+  align-items: center;
+  justify-content: center;
 
   position: absolute;
   bottom: 0;
@@ -353,13 +357,9 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--wait);
-
-  margin-top: 27px;
-  margin-bottom: 27px;
 }
 /* WE SECTION */
 
@@ -379,7 +379,6 @@ img {
 
 .we-list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .we-list-item + .we-list-item {
@@ -390,10 +389,11 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--wait);
 }
 
 .we-block {
-  margin-top: 30px;
+  padding: 30px 0;
 }
 
 .we-name {
@@ -410,7 +410,7 @@ img {
 
 .we-proffesion {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -423,7 +423,7 @@ img {
   justify-content: center;
 }
 
-.social-links + .social-links {
+.social-items + .social-items {
   margin-left: 10px;
 }
 
@@ -434,7 +434,6 @@ img {
 
 .social-links {
   fill: #afb1b8;
-  margin-bottom: 42px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -449,10 +448,12 @@ img {
   border-radius: 50%;
   background: var(--hover-color);
   fill: var(--wait);
+  transition-duration: 250ms;
 }
 
 .social-links:focus {
   fill: var(--wait);
+  transition-duration: 250ms;
 }
 
 /* CLIENT SECTION */
@@ -480,7 +481,6 @@ img {
   border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
-
   fill: var(--icon-color);
 }
 
@@ -490,6 +490,7 @@ img {
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .client-item + .client-item {
@@ -556,7 +557,7 @@ img {
 .footer-logo:hover,
 .footer-logo:focus {
   color: var(--hover-color);
-  background-color: var(--second-color);
+  transition-duration: 250ms;
 }
 
 address {
@@ -586,12 +587,13 @@ address {
   margin-top: 9px;
 }
 .address-email:hover,
-:focus,
+.address-email:focus,
 .address-tel:hover,
-:focus,
+.address-tel:focus,
 .address-post:hover,
-:focus {
+.address-post:focus {
   color: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .join {
@@ -625,6 +627,7 @@ address {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--hover-color);
+  transition-duration: 250ms;
 }
 
 .join-img {
@@ -655,17 +658,18 @@ address {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   min-width: 73px;
   padding: 6px 22px;
 }
 
 .buttons-button:hover,
-:focus {
+.buttons-button:focus {
   background-color: var(--hover-color);
   color: var(--wait);
+  transition-duration: 250ms;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons-list {
@@ -693,7 +697,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
-  margin-left: 24px;
+
   text-decoration: none;
 }
 
@@ -710,7 +714,7 @@ address {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  margin-left: 24px;
+
   text-decoration: none;
 }
 .examples-overlay {
@@ -751,6 +755,7 @@ address {
   text-decoration: none;
 }
 .examples-cont {
+  padding: 20px 24px;
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
