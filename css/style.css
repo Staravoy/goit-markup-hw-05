@@ -62,6 +62,8 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .header-logo-decor {
@@ -72,7 +74,6 @@ p {
 .logo:focus {
   color: var(--hover-color);
   background-color: var(--wait);
-  transition-duration: 250ms;
 }
 
 .nav {
@@ -100,13 +101,14 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--hover-color);
   background: var(--whait);
-  transition-duration: 250ms;
 }
 
 .nav-link-active {
@@ -125,7 +127,6 @@ p {
 .contacts-contact:focus {
   fill: var(--hover-color);
   color: var(--hover-color);
-  transition-duration: 250ms;
 }
 .contacts-contact {
   padding: 32px 0;
@@ -139,6 +140,8 @@ p {
 
   display: flex;
   align-items: center;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .icon-contact {
@@ -240,6 +243,8 @@ p {
   margin-bottom: 543px;
   border-color: var(--icon-color);
   background-color: var(--wait);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 .close-img {
   width: 11px;
@@ -440,21 +445,22 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
-.social-links:hover {
+.social-links:hover .social-links:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background: var(--hover-color);
   fill: var(--wait);
-  transition-duration: 250ms;
 }
 
-.social-links:focus {
+/*.social-links:focus {
   fill: var(--wait);
-  transition-duration: 250ms;
-}
+  background-color: var(--hover-color);
+}*/
 
 /* CLIENT SECTION */
 
@@ -482,6 +488,8 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--icon-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .client-link:hover,
@@ -490,7 +498,6 @@ img {
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
   cursor: pointer;
-  transition-duration: 250ms;
 }
 
 .client-item + .client-item {
@@ -548,6 +555,8 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .footer-logo-decor {
@@ -557,7 +566,6 @@ img {
 .footer-logo:hover,
 .footer-logo:focus {
   color: var(--hover-color);
-  transition-duration: 250ms;
 }
 
 address {
@@ -571,6 +579,8 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--wait);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .address-email,
@@ -582,6 +592,8 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 .item-footer + .item-footer {
   margin-top: 9px;
@@ -593,7 +605,6 @@ address {
 .address-post:hover,
 .address-post:focus {
   color: var(--hover-color);
-  transition-duration: 250ms;
 }
 
 .join {
@@ -627,7 +638,6 @@ address {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--hover-color);
-  transition-duration: 250ms;
 }
 
 .join-img {
@@ -643,6 +653,8 @@ address {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 /* СТОРІНКА PORTFOLIO */
@@ -661,13 +673,15 @@ address {
 
   min-width: 73px;
   padding: 6px 22px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .buttons-button:hover,
 .buttons-button:focus {
   background-color: var(--hover-color);
   color: var(--wait);
-  transition-duration: 250ms;
+
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
