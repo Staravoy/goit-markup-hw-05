@@ -62,8 +62,7 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-logo-decor {
@@ -101,8 +100,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -137,8 +135,7 @@ p {
   color: var(--second-color);
   letter-spacing: 0.02em;
   fill: var(--icon-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
   align-items: center;
@@ -243,8 +240,7 @@ p {
   margin-bottom: 543px;
   border-color: var(--icon-color);
   background-color: var(--wait);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-img {
   width: 11px;
@@ -445,8 +441,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links:hover {
@@ -485,8 +480,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--icon-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
@@ -552,8 +546,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-logo-decor {
@@ -576,8 +569,7 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--wait);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-email,
@@ -589,8 +581,7 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-footer + .item-footer {
   margin-top: 9px;
@@ -650,8 +641,7 @@ address {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* СТОРІНКА PORTFOLIO */
@@ -670,8 +660,7 @@ address {
 
   min-width: 73px;
   padding: 6px 22px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-button:hover,
